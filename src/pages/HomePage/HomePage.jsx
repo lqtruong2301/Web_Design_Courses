@@ -1,12 +1,17 @@
 import React from "react";
-import "../../components/MainContent/MainContent";
+import {Link, useNavigation} from  "react-router-dom"
 import MainContent from "../../components/MainContent/MainContent";
+import "./HomePage.css"
+import Navigation from "../../components/Navigation/Navigation"
 
 const MyComponent = () => {
     return (
         <MainContent>
-            <h1>Hello World</h1>
+            <div>
+                <Navigation />
+            </div>
         </MainContent>
+
     );
 };
 

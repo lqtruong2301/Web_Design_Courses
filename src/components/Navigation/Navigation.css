@@ -1,0 +1,80 @@
+:root {
+    --main-color: #1ebfc1;
+    --second-color: #0d1111;
+}
+
+/* Common */
+li {
+    text-decoration: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--second-color);
+}
+
+/* Navigation */
+
+.nav-content {
+    background: #fff;
+    padding: 52px 0 8px;
+}
+
+.nav-content .nav-body {
+    display: flex;
+    align-items: center;
+}
+
+.nav-content .nav {
+    margin-left: auto;
+}
+
+.nav .nav-list {
+    display: flex;
+    gap: 39px;
+    list-style-type: none;
+}
+
+.nav .nav-list a {
+    font-size: 1.6rem;
+}
+
+.nav .nav-list a:hover {
+    color: var(--main-color);
+}
+
+.nav-content .nav-action {
+    margin-left: 177px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+}
+
+.nav-action .sign-in-btn {
+    color: #494949;
+    font-size: 1.6rem;
+}
+
+.nav-action .sign-in-btn:hover {
+    color: var(--main-color);
+}
+
+.nav-action .sign-up-btn {
+    width: 108px;
+    height: 48px;
+    color: var(--main-color);
+    font-size: 1.6rem;
+    font-weight: 600;
+    border-radius: 6px;
+    border: 1px solid var(--main-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.nav-action .sign-up-btn:hover {
+    background: var(--main-color);
+    color: white;
+}
