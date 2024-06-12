@@ -1,7 +1,7 @@
 :root {
     font-family: "Montserrat", sans-serif;;
     font-size: 62.5%; /*10px = 1 rem*/
-
+    
     font-synthesis: none;
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
