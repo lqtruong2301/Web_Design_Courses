@@ -1,0 +1,39 @@
+:root {
+    --main-color: #1ebfc1;
+    --second-color: #0d1111;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* padding-bottom: 2%; */
+    /* border-bottom: 1px solid #e8ebed; */
+}
+
+.header .logo {
+    display: flex;
+    align-items: center;
+}
+
+.header .nav-menu {
+    width: 44%;
+    display: flex;
+    justify-content: center;
+}
+
+.header .user-btn {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.header .user-btn .btn {
+    padding: 25px 30px;
+    border-radius: 10px;
+}
+
+.user-btn .btn.sign-in-btn {
+    color: white;
+    background-color: var(--main-color);
+}

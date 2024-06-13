@@ -1,16 +1,22 @@
 import React from "react";
 import { Link, useNavigation } from "react-router-dom";
-import MainContent from "../../components/MainContent/MainContent";
 import "./HomePage.css";
-import Navigation from "../../components/Navigation/Navigation";
+import { Layout } from "antd";
+import MyHeader from "../../components/Header/Header";
+import Hero from "../../pages/Hero/Hero"
+
+const { Header, Content } = Layout;
 
 const MyComponent = () => {
     return (
-        <MainContent>
-            <div className="header-fixed">
-                <Navigation />
-            </div>
-        </MainContent>
+        <Layout className="styleLayout">
+            <Header className="styleHeader">
+                <MyHeader />
+            </Header>
+            <Content className="styleContent">
+                <Hero />
+            </Content>
+        </Layout>
     );
 };
 
