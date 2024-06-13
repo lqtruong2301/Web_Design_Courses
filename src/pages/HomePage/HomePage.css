@@ -1,5 +1,24 @@
-.header-fixed {
+* {
+    font-size: 1.6rem;
+    font-family: "Montserrat", sans-serif;
+}
+
+.styleLayout {
+    width: 1170px;
+    max-width: calc(100% - 48px);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.styleHeader {
     position: sticky;
-    top: -44px;
+    top: 0;
+    background: #fff;
+    width: 100%;
     z-index: 1;
+}
+
+.styleContent {
+    background: #fff;
+    width: 100%;
 }
