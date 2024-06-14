@@ -1,6 +1,8 @@
 * {
     font-size: 1.6rem;
-    font-family: "Montserrat", sans-serif;
+    font-family: "Poppins", sans-serif;
+    --main-color: #1ebfc1;
+    --second-color: #0d1111;
 }
 
 .styleLayout {
@@ -16,9 +18,11 @@
     background: #fff;
     width: 100%;
     z-index: 1;
+    margin: 0;
 }
 
 .styleContent {
     background: #fff;
     width: 100%;
+    padding: 0 50px;
 }
