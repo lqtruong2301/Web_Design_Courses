@@ -103,3 +103,69 @@
     font-weight: 600;
     width: 55px;
 }
+
+.hero-img-box .schedules-state {
+    top: 453px;
+    left: -66px;
+    position: absolute;
+    width: 124px;
+    height: 132px;
+    border-radius: 24px;
+    background: #fff;
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+}
+
+.hero-img-box .schedules-state::before {
+    position: absolute;
+    top: 110px;
+    left: 50px;
+    content: "";
+    width: 26px;
+    height: 6px;
+    border-radius: 3px;
+    background: #edf1f5;
+}
+
+.schedules-state .schedules-state-content {
+    margin-top: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #0d1111;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.schedules-state .schedules-state-value {
+    margin-top: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 12px 0;
+}
+
+.hero-img-box .students-active-state {
+    top: 500px;
+    left: 324px;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 207px;
+    height: 90px;
+    border-radius: 24px;
+    background: #fefefd;
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+}
+
+.students-active-state .students-active-state-content {
+    margin-top: 17px;
+    color: #0d1111;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.students-active-state .students-active-user {
+    margin-top: 8px;
+}
