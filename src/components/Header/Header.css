@@ -2,6 +2,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    border-bottom: 1px solid rgba(5, 5, 5, 0.06);
     /* padding-bottom: 2%; */
     /* border-bottom: 1px solid #e8ebed; */
 }
@@ -29,6 +30,10 @@
 }
 
 .user-btn .btn.sign-in-btn {
+    border: none;
+}
+
+.user-btn .btn.sign-up-btn {
     color: white;
     background-color: var(--main-color);
 }

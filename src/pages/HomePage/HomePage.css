@@ -13,6 +13,7 @@
 }
 
 .styleHeader {
+    padding: 0;
     position: sticky;
     top: 0;
     background: #fff;
@@ -24,5 +25,4 @@
 .styleContent {
     background: #fff;
     width: 100%;
-    padding: 0 50px;
 }
