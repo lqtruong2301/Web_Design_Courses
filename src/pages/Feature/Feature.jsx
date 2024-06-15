@@ -30,13 +30,13 @@ const MyComponent = () => {
   return (
     <div className="feature">
       <div className="feature-top">
-        <p className="label-feature">F  E  A  T  U  R  E  S</p>
+        <p className="label-feature">FEATURES</p>
         <h2 className="sub-title">We are providing suitable features for students.</h2>
         <p className="desc-feature">
           Read our awesome features that absolutely suit you. Explore the features and know the best.
         </p>
 
-        <Row gutter={[16, 16]}>
+        <Row gutter={[16, 16]} style={{marginTop: "80px"}}>
           {items.map((item) => (
             <Col span={8} key={item.key}>
               <div className="feature-item">

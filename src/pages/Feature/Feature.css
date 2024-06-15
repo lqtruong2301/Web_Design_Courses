@@ -1,5 +1,11 @@
+.feature {
+    margin-top: 50px;
+    padding-bottom: 80px;
+}
+
 .feature-top .label-feature 
 {
+    letter-spacing: 6.5px;
     color: #767E7E;
     font-weight: 700;
     font-size: 1.4rem;
@@ -10,24 +16,21 @@
     font-size: 4.2rem;
     font-weight: 700;
     line-height: 5.6rem;
+
 }
 .feature-top .desc-feature{
     color: #767E7E;
     font-size: 1.8rem;
-    font-weight: 400;
-    width: 590px;
+    width: 574px;
 }
-.feature-icon {
-    /* width: 10.2rem;
-    height: 10.6rem; */
-}
+
 .feature-title{
     color: #0D1111;
     font-size: 20px;
     font-weight: 600;
 }
 .feature-content{
-    width: 178px;
+    width: 62%;
     color: #9DA6A5;
     font-family: Poppins;
     font-size: 1.6rem;
