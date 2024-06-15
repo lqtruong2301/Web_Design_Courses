@@ -52,7 +52,7 @@ const Hero = () => {
                             <span
                                 style={{
                                     position: "absolute",
-                                    left: "24px",
+                                    left: "29px",
                                     marginTop: "10px",
                                 }}
                             >
