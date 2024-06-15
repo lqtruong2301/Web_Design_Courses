@@ -1,0 +1,35 @@
+
+.course-top .label-course 
+{
+    letter-spacing: 6.5px;
+    color: #767E7E;
+    font-weight: 700;
+    font-size: 1.4rem;
+}
+.course-top .sub-title {
+    color: #0D1111;
+    width: 577px;
+    font-size: 4.2rem;
+    font-weight: 700;
+    line-height: 5.6rem;
+
+}
+.course-top .desc-course{
+    color: #767E7E;
+    font-size: 1.8rem;
+    width: 574px;
+}
+
+.course-title{
+    color: #0D1111;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.course_card{
+    height: 429px;
+}
+.card_content{
+    margin: 10px 0;
+    
+}
