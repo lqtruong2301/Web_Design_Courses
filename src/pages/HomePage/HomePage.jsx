@@ -3,9 +3,11 @@ import { Link, useNavigation } from "react-router-dom";
 import "./HomePage.css";
 import { Layout } from "antd";
 import MyHeader from "../../components/Header/Header";
-import Hero from "../../pages/Hero/Hero"
-import Feature from "../../pages/Feature/Feature"
+import Hero from "../../pages/Hero/Hero";
+import Feature from "../../pages/Feature/Feature";
+import About from "../../pages/About/About";
 import Course from "../../pages/Course/Course"
+
 const { Header, Content } = Layout;
 
 const MyComponent = () => {
@@ -18,6 +20,7 @@ const MyComponent = () => {
                 <Hero />
                 <Feature />
                 <Course />
+                <About />
             </Content>
         </Layout>
     );
