@@ -1,5 +1,6 @@
 .hero {
     margin: 50px 0 0;
+    padding-bottom: 79px;
 }
 
 .hero-content {
@@ -12,6 +13,7 @@
 }
 
 .hero-content .title {
+    width: 458px;
     color: #0d1111;
     font-size: 6.2rem;
     font-weight: 700;
@@ -21,9 +23,11 @@
     color: #9da6a5;
     font-size: 1.8rem;
     line-height: 1.78;
+    width: 374px;
 }
 
 .hero-content .play-btn-box {
+    margin-top: 50px;
     display: flex;
     gap: 50px;
     height: 68px;
@@ -40,6 +44,10 @@
     box-shadow: 0px 10px 50px 0px rgba(0, 0, 0, 0.05);
 }
 
+.hero-content .play-btn-box .start-btn:hover {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
 .hero-content .play-btn-box .play-btn {
     color: var(--main-color);
     width: 62px;
@@ -47,7 +55,6 @@
     border: none;
     border-radius: 50%;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-   
 }
 
 .hero-content .play-btn-box .play-btn:hover {
@@ -59,4 +66,40 @@
 .play-btn .play-icon {
     width: 18px;
     height: 18px;
+}
+
+.hero .hero-img-box {
+    position: relative;
+}
+
+.hero .hero-img-box .hero-img {
+    width: 585px;
+    height: 631px;
+}
+
+.hero-img-box .course-state {
+    top: 150px;
+    left: -46px;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    width: 147px;
+    height: 65px;
+    border-radius: 18px;
+    background: #fefefd;
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+}
+
+.course-state .book-icon {
+    width: 36px;
+    height: 40px;
+}
+
+.course-state .course-state-content {
+    color: #0d1111;
+    font-size: 1rem;
+    font-weight: 600;
+    width: 55px;
 }
