@@ -1,6 +1,6 @@
 import React from "react";
 import "./Course.css";
-import { Row, Col, Card } from "antd";
+import { Row, Col, Card, Button, Typography } from "antd";
 import icon from '../../assets/icon/course_icon.svg'; 
 import web_design from "../../assets/img/web_design.png";
 import web_development from "../../assets/img/web_development.png";
@@ -44,9 +44,18 @@ const MyComponent = () => {
       <div className="course-top">
         <p className="label-course">COURSES</p>
         <h2 className="sub-title">Popular Courses</h2>
-        <p className="desc-course">
-          Check out our most popular courses that suit for you. Here you can find your favourite one.
-        </p>
+        
+        <Row style={{display:'flex',justifyContent:'space-between',alignItems:'center'}}>
+          <Col>
+            <p className="desc-course">
+              Check out our most popular courses that suit for you. Here you can find your favourite one.
+            </p>
+          </Col>
+          
+          <Col>
+          <Typography.Link href="#!" className="view-all-course-btn">View All Course</Typography.Link>
+          </Col>
+        </Row>
 
         <Row gutter={[16, 16]} style={{ marginTop: "80px" }}>
         {items.map((item) => (
@@ -61,12 +70,20 @@ const MyComponent = () => {
                 title={item.title}
                 description={
                   <div>
-                    <div className="card_content" >Fee: {item.fee} </div>
-                    <div className="card_content">{item.desc}</div>
-                    <div style={{ display: 'flex', alignItems: 'center' }}>
-                      <img src={icon} style={{ marginRight: 4 }} /> {item.class} Classes
-                       <img src={icon} style={{ margin: '0 4px' }} /> {item.month} Months
-                    </div>
+               <Row>
+                <Col>
+                     <Row>
+                        <div className="card_content" >Fee: {item.fee} </div>
+                        <div className="card_content">{item.desc}</div>
+                        <div style={{ display: 'flex', alignItems: 'center' }}>
+                          <img src={icon} style={{ marginRight: 4 }} /> {item.class} Classes
+                          <img src={icon} style={{ margin: '0 4px' }} /> {item.month} Months
+                        </div>
+                     </Row>
+                    <Row style={{marginTop:'20px'}}>  <Button type="primary"  style={{minHeight:'50px',borderRadius:'12px',fontSize:'1.8rem',fontWeight:'500' }}>View Course</Button></Row>
+                </Col>
+               </Row>
+              
                   </div>
                 }
               />

@@ -29,8 +29,16 @@
 }
 
 .course_card {
-    height: 429px;
+    min-height: 490px;
+    border: 2px solid #e8ecec;
 }
 .card_content {
     margin: 10px 0;
+}
+.view-all-course-btn {
+    color: var(--main-color);
+    font-size: 1.4rem;
+    font-weight: 600;
+    text-decoration: underline !important;
+
 }
