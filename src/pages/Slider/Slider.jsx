@@ -48,6 +48,7 @@ const Slider = () => {
                             <Col span={18}>
                                 <h3 className="title-slider">{item.title}</h3>
                                 <p className="desc-slider">{item.desc}</p>
+                                <Button className="register-btn">Register now</Button>
                             </Col>
 
                             <Col span={6}>
@@ -59,6 +60,7 @@ const Slider = () => {
                                 />
                             </Col>
                         </Row>
+                        <Row></Row>
                     </div>
                 ))}
             </Carousel>
