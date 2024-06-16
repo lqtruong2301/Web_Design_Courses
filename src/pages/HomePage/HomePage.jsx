@@ -8,6 +8,7 @@ import Feature from "../../pages/Feature/Feature";
 import Course from "../../pages/Course/Course"
 import About from "../../pages/About/About";
 import Slider from "../../pages/Slider/Slider";
+import Contact from "../../pages/Contact/Contact";
 
 const { Header, Content } = Layout;
 
@@ -23,6 +24,7 @@ const MyComponent = () => {
                 <Course />
                 <About />
                 <Slider />
+                <Contact />
             </Content>
         </Layout>
     );

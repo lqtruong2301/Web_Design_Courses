@@ -1,0 +1,34 @@
+.contact {
+    padding-top: 50px;
+    padding-bottom: 80px;
+}
+
+.contact .group-contact {
+    display: flex;
+    justify-content: center;
+    gap: 144px;
+}
+
+.group-contact .sub-title-contact {
+    width: 100%;
+    color: #2e2e2e;
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+
+.group-contact .contact-list {
+    display: flex;
+    flex-direction: column;
+    margin-top: 7px;
+    gap: 16px;
+}
+
+.group-contact .contact-list a {
+    color: #535353;
+    font-size: 1.6rem;
+}
+
+.group-contact .contact-list a:hover {
+    opacity: 0.9;
+    color: var(--main-color);
+}
