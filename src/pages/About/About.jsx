@@ -22,9 +22,9 @@ const users = [
     },
     {
         key: 4,
-        name: "- Emma, ",
+        name: "Emma",
         quote: "They are the best people. And this is the suitable platform to learn from distance.",
-        position: "student.",
+        position: "student",
         img: "https://www.ldg.com.vn/media/uploads/uploads/21210715-hinh-anh-gai-xinh-16.jpg",
         className: "user-avatar-4",
     },
@@ -41,6 +41,7 @@ const users = [
 ];
 
 const About = () => {
+    const userWithQuote = users.find((user) => user.quote);
     return (
         <div className="about">
             <Row>
@@ -51,17 +52,17 @@ const About = () => {
                             alt="Benisk."
                             style={{ width: "36px", height: "29px" }}
                         />
-                        {users.map((item) => (
+                        {userWithQuote && (
                             <>
-                                <p className="quote">{item.quote}</p>
+                                <p className="quote">{userWithQuote.quote}</p>
                                 <p className="position-about">
-                                   {item.name} 
+                                    - {userWithQuote.name},&nbsp;
                                     <span className="position-about-user">
-                                        {item.position}
+                                        {userWithQuote.position}.
                                     </span>
                                 </p>
                             </>
-                        ))}
+                        )}
 
                         <div className="group-arrow-btn">
                             <Button
@@ -89,7 +90,7 @@ const About = () => {
                             {users.map((item) => (
                                 <img
                                     src={item.img}
-                                    alt=""
+                                    alt="Besnik."
                                     className={`user-avatar ${item.className}`}
                                 />
                             ))}
