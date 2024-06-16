@@ -1,0 +1,10 @@
+.footer .footer-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer .footer-box .footer-content {
+    color: #b0b5b4;
+    font-size: 1.8rem;
+}

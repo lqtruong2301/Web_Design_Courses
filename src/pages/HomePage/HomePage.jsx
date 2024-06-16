@@ -9,8 +9,9 @@ import Course from "../../pages/Course/Course"
 import About from "../../pages/About/About";
 import Slider from "../../pages/Slider/Slider";
 import Contact from "../../pages/Contact/Contact";
+import MyFooter from "../../components/Footer/MyFooter";
 
-const { Header, Content } = Layout;
+const { Header, Content, Footer } = Layout;
 
 const MyComponent = () => {
     return (
@@ -26,6 +27,9 @@ const MyComponent = () => {
                 <Slider />
                 <Contact />
             </Content>
+            <Footer className="style-footer">
+                <MyFooter />
+            </Footer>
         </Layout>
     );
 };

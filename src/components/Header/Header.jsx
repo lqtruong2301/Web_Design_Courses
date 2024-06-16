@@ -7,14 +7,18 @@ const MyHeader = () => {
     return (
         <div className="header">
             <div className="logo">
-                <img src={Logo} alt="Benisk." />
+                <a href="#" style={{display: "flex"}}>
+                    <img src={Logo} alt="Benisk." />
+                </a>
             </div>
             <Menu
                 mode="horizontal"
                 defaultSelectedKeys={["home"]}
                 className="nav-menu"
             >
-                <Menu.Item key="home">Home</Menu.Item>
+                <Menu.Item key="home">
+                    <a href="#">Home</a>
+                </Menu.Item>
                 <Menu.Item key="features">Features</Menu.Item>
                 <Menu.Item key="pricing">Pricing</Menu.Item>
                 <Menu.Item key="about">About</Menu.Item>

@@ -6,10 +6,7 @@
 }
 
 .styleLayout {
-    width: 1170px;
-    max-width: calc(100% - 48px);
-    margin-left: auto;
-    margin-right: auto;
+    background: #fff;
 }
 
 .styleHeader {
@@ -20,9 +17,19 @@
     width: 100%;
     z-index: 1;
     margin: 0;
+    border-bottom: 1px solid rgba(5, 5, 5, 0.06);
 }
 
 .styleContent {
+    width: 1170px;
+    max-width: calc(100% - 48px);
+    margin-left: auto;
+    margin-right: auto;
+    background: #fff;
+    max-width: 100%;
+}
+
+.style-footer {
     background: #fff;
     max-width: 100%;
 }
