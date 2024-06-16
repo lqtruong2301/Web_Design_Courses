@@ -10,6 +10,7 @@ import About from "../../pages/About/About";
 import Slider from "../../pages/Slider/Slider";
 import Contact from "../../pages/Contact/Contact";
 import MyFooter from "../../components/Footer/MyFooter";
+import ValueState from "../../pages/ValueState/ValueState";
 
 const { Header, Content, Footer } = Layout;
 
@@ -23,6 +24,7 @@ const MyComponent = () => {
                 <Hero />
                 <Feature />
                 <Course />
+                <ValueState />
                 <About />
                 <Slider />
                 <Contact />
