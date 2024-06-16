@@ -5,8 +5,9 @@ import { Layout } from "antd";
 import MyHeader from "../../components/Header/Header";
 import Hero from "../../pages/Hero/Hero";
 import Feature from "../../pages/Feature/Feature";
-import About from "../../pages/About/About";
 import Course from "../../pages/Course/Course"
+import About from "../../pages/About/About";
+import Slider from "../../pages/Slider/Slider";
 
 const { Header, Content } = Layout;
 
@@ -21,6 +22,7 @@ const MyComponent = () => {
                 <Feature />
                 <Course />
                 <About />
+                <Slider />
             </Content>
         </Layout>
     );

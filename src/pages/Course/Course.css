@@ -1,35 +1,36 @@
+.course {
+    margin-top: 50px;
+    padding-bottom: 80px;
+}
 
-.course-top .label-course 
-{
+.course-top .label-course {
     letter-spacing: 6.5px;
-    color: #767E7E;
+    color: #767e7e;
     font-weight: 700;
     font-size: 1.4rem;
 }
 .course-top .sub-title {
-    color: #0D1111;
+    color: #0d1111;
     width: 577px;
     font-size: 4.2rem;
     font-weight: 700;
     line-height: 5.6rem;
-
 }
-.course-top .desc-course{
-    color: #767E7E;
+.course-top .desc-course {
+    color: #767e7e;
     font-size: 1.8rem;
-    width: 574px;
+    width: 560px;
 }
 
-.course-title{
-    color: #0D1111;
+.course-title {
+    color: #0d1111;
     font-size: 20px;
     font-weight: 600;
 }
 
-.course_card{
+.course_card {
     height: 429px;
 }
-.card_content{
+.card_content {
     margin: 10px 0;
-    
 }

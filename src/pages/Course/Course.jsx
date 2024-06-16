@@ -42,7 +42,7 @@ const MyComponent = () => {
   return (
     <div className="course">
       <div className="course-top">
-        <p className="label-course">C  O  U  R  S  E  S</p>
+        <p className="label-course">COURSES</p>
         <h2 className="sub-title">Popular Courses</h2>
         <p className="desc-course">
           Check out our most popular courses that suit for you. Here you can find your favourite one.
