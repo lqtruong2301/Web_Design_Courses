@@ -23,7 +23,7 @@ const banners = [
         key: 3,
         className: "banner-3",
         title: "UX/UI Design",
-        desc: "Interface) refer to the aspects of user interaction with digital products. UX focuses on improving overall satisfaction and usability through research and analysis. UI focuses on designing user interfaces to ensure they are user-friendly and visually appealing",
+        desc: "UX/UI design focuses on creating user-friendly and visually appealing interfaces. UX (User Experience) improves overall interaction, while UI (User Interface) designs the layout. Together, they enhance user satisfaction.",
         img: "https://www.zestbrains.com/assets/images/ui-ux-design/ui-ux-design.png",
     },
 ];
@@ -48,7 +48,9 @@ const Slider = () => {
                             <Col span={18}>
                                 <h3 className="title-slider">{item.title}</h3>
                                 <p className="desc-slider">{item.desc}</p>
-                                <Button className="register-btn">Register now</Button>
+                                <Button className="register-btn">
+                                    Register now
+                                </Button>
                             </Col>
 
                             <Col span={6}>
