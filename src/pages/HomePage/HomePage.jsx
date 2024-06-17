@@ -22,6 +22,7 @@ const MyComponent = () => {
     const contactRef = useRef(null);
 
     const scrollToTop = () => {
+        setCurrent("home");
         window.scrollTo({
             top: 0,
             behavior: "smooth",

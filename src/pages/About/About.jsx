@@ -40,23 +40,20 @@ const users = [
     },
 ];
 
-const About = ({ scrollToTop }) => {
+const About = () => {
     const userWithQuote = users.find((user) => user.quote);
     return (
         <div className="about">
             <Row>
                 <Col span={10}>
                     <div className="about-box">
-                        <div
-                            onClick={scrollToTop}
-                            style={{ cursor: "pointer" }}
-                        >
+                        
                             <img
                                 src={Quotes}
                                 alt="Benisk."
                                 style={{ width: "36px", height: "29px" }}
                             />
-                        </div>
+                        
                         {userWithQuote && (
                             <>
                                 <p className="quote">{userWithQuote.quote}</p>

@@ -14,7 +14,8 @@ const Contact = () => {
         <div className="contact">
             <Row gutter={[16, 16]}>
                 <Col span={4}>
-                    <a href="#">
+                    <a href="#!">
+                        {" "}
                         <img src={Logo} alt="Benisk." />
                     </a>
                 </Col>
