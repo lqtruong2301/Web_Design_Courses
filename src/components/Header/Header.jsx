@@ -3,26 +3,39 @@ import "./Header.css";
 import Logo from "../../assets/logo/Logo.svg";
 import { Menu, Button } from "antd";
 
-const MyHeader = () => {
+const MyHeader = ({ current, setCurrent, scrollToTop }) => {
     return (
         <div className="header">
-            <div className="logo">
-                <a href="#" style={{display: "flex"}}>
-                    <img src={Logo} alt="Benisk." />
-                </a>
+            <div
+                className="logo"
+                onClick={scrollToTop}
+                style={{ cursor: "pointer" }}
+            >
+                <img src={Logo} alt="Benisk." />
             </div>
             <Menu
                 mode="horizontal"
-                defaultSelectedKeys={["home"]}
+                selectedKeys={[current]}
                 className="nav-menu"
             >
-                <Menu.Item key="home">
-                    <a href="#">Home</a>
+                <Menu.Item key="home" onClick={() => setCurrent("home")}>
+                    Home
                 </Menu.Item>
-                <Menu.Item key="features">Features</Menu.Item>
-                <Menu.Item key="pricing">Pricing</Menu.Item>
-                <Menu.Item key="about">About</Menu.Item>
-                <Menu.Item key="contact">Contact</Menu.Item>
+                <Menu.Item
+                    key="features"
+                    onClick={() => setCurrent("features")}
+                >
+                    Features
+                </Menu.Item>
+                <Menu.Item key="pricing" onClick={() => setCurrent("pricing")}>
+                    Pricing
+                </Menu.Item>
+                <Menu.Item key="about" onClick={() => setCurrent("about")}>
+                    About
+                </Menu.Item>
+                <Menu.Item key="contact" onClick={() => setCurrent("contact")}>
+                    Contact
+                </Menu.Item>
             </Menu>
             <div className="user-btn">
                 <Button className="btn sign-in-btn">Sign In</Button>

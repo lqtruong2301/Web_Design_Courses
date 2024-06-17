@@ -40,18 +40,23 @@ const users = [
     },
 ];
 
-const About = () => {
+const About = ({ scrollToTop }) => {
     const userWithQuote = users.find((user) => user.quote);
     return (
         <div className="about">
             <Row>
                 <Col span={10}>
                     <div className="about-box">
-                        <img
-                            src={Quotes}
-                            alt="Benisk."
-                            style={{ width: "36px", height: "29px" }}
-                        />
+                        <div
+                            onClick={scrollToTop}
+                            style={{ cursor: "pointer" }}
+                        >
+                            <img
+                                src={Quotes}
+                                alt="Benisk."
+                                style={{ width: "36px", height: "29px" }}
+                            />
+                        </div>
                         {userWithQuote && (
                             <>
                                 <p className="quote">{userWithQuote.quote}</p>
@@ -89,6 +94,7 @@ const About = () => {
                         <div className="user-avatars-group">
                             {users.map((item) => (
                                 <img
+                                    key={item.key}
                                     src={item.img}
                                     alt="Besnik."
                                     className={`user-avatar ${item.className}`}
