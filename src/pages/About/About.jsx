@@ -3,6 +3,7 @@ import "./About.css";
 import { Row, Col, Button } from "antd";
 import { LeftOutlined, RightOutlined } from "@ant-design/icons";
 import Quotes from "../../assets/icon/quotes.svg";
+import useViewport from "../../hooks/useViewport.jsx";
 
 const users = [
     {
@@ -40,55 +41,128 @@ const users = [
     },
 ];
 
+
 const About = () => {
     const userWithQuote = users.find((user) => user.quote);
+    const viewPort = useViewport();
+    const isMobile = viewPort.width <= 1024;
     return (
         <div className="about">
             <Row>
-                <Col span={10}>
-                    <div className="about-box">
-                        
-                            <img
-                                src={Quotes}
-                                alt="Benisk."
-                                style={{ width: "36px", height: "29px" }}
-                            />
-                        
-                        {userWithQuote && (
-                            <>
-                                <p className="quote">{userWithQuote.quote}</p>
-                                <p className="position-about">
-                                    - {userWithQuote.name},&nbsp;
-                                    <span className="position-about-user">
-                                        {userWithQuote.position}.
-                                    </span>
-                                </p>
-                            </>
-                        )}
+                {!isMobile ? (
+                    <Col span={10}>
+                        <div className="about-box">
+                            <div
+                                onClick={scrollToTop}
+                                style={{ cursor: "pointer" }}
+                            >
+                                <img
+                                    src={Quotes}
+                                    alt="Benisk."
+                                    style={{ width: "36px", height: "29px" }}
+                                />
+                            </div>
+                            {userWithQuote && (
+                                <>
+                                    <p className="quote">
+                                        {userWithQuote.quote}
+                                    </p>
+                                    <p className="position-about">
+                                        - {userWithQuote.name},&nbsp;
+                                        <span className="position-about-user">
+                                            {userWithQuote.position}.
+                                        </span>
+                                    </p>
+                                </>
+                            )}
 
-                        <div className="group-arrow-btn">
-                            <Button
-                                icon={
-                                    <LeftOutlined
-                                        style={{ color: "#fff" }}
-                                        className="arrow-left-btn"
-                                    />
-                                }
-                            ></Button>
-                            <Button
-                                icon={
-                                    <RightOutlined
-                                        style={{ color: "#fff" }}
-                                        className="arrow-right-btn"
-                                    />
-                                }
-                            ></Button>
+                            <div className="group-arrow-btn">
+                                <Button
+                                    icon={
+                                        <LeftOutlined
+                                            style={{ color: "#fff" }}
+                                            className="arrow-left-btn"
+                                        />
+                                    }
+                                ></Button>
+                                <Button
+                                    icon={
+                                        <RightOutlined
+                                            style={{ color: "#fff" }}
+                                            className="arrow-right-btn"
+                                        />
+                                    }
+                                ></Button>
+                            </div>
                         </div>
-                    </div>
-                </Col>
-                <Col span={14}>
-                    <Row>
-                        <div className="user-avatars-group">
+                    </Col>
+                ) : (
+                    <Col span={12} style={{padding: "0 20px"}}>
+                        <div className="about-box">
+                            <div
+                                onClick={scrollToTop}
+                                style={{ cursor: "pointer" }}
+                            >
+                                <img
+                                    src={Quotes}
+                                    alt="Benisk."
+                                    style={{ width: "36px", height: "29px" }}
+                                />
+                            </div>
+                            {userWithQuote && (
+                                <>
+                                    <p className="quote">
+                                        {userWithQuote.quote}
+                                    </p>
+                                    <p className="position-about">
+                                        - {userWithQuote.name},&nbsp;
+                                        <span className="position-about-user">
+                                            {userWithQuote.position}.
+                                        </span>
+                                    </p>
+                                </>
+                            )}
+
+                            <div className="group-arrow-btn">
+                                <Button
+                                    icon={
+                                        <LeftOutlined
+                                            style={{ color: "#fff" }}
+                                            className="arrow-left-btn"
+                                        />
+                                    }
+                                ></Button>
+                                <Button
+                                    icon={
+                                        <RightOutlined
+                                            style={{ color: "#fff" }}
+                                            className="arrow-right-btn"
+                                        />
+                                    }
+                                ></Button>
+                            </div>
+                        </div>
+                    </Col>
+                )}
+                
+                {!isMobile ? (
+                    <Col span={14}>
+                        <Row>
+                            <div className="user-avatars-group">
+                                {users.map((item) => (
+                                    <img
+                                        key={item.key}
+                                        src={item.img}
+                                        alt="Besnik."
+                                        className={`user-avatar ${item.className}`}
+                                    />
+                                ))}
+                            </div>
+                        </Row>
+                    </Col>
+                ) : (
+                    <Col span={12}>
+                        <Row  style={{width:"100%", display:"flex", justifyContent:"center"}}>
                             {users.map((item) => (
                                 <img
                                     key={item.key}
@@ -97,9 +171,9 @@ const About = () => {
                                     className={`user-avatar ${item.className}`}
                                 />
                             ))}
-                        </div>
-                    </Row>
-                </Col>
+                        </Row>
+                    </Col>
+                )}
             </Row>
         </div>
     );

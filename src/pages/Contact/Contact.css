@@ -31,3 +31,36 @@
     opacity: 0.9;
     color: var(--main-color);
 }
+
+@media screen and (max-width: 1024px) {
+    .contact {
+        padding-top: 0;
+    }
+
+    .group-contact {
+        justify-content: center;
+    }
+    .contact-list {
+        margin-top: 50px;
+        display: flex;
+        justify-content: center;
+        gap: 50px;
+    }
+
+    .contact-list a {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: #535353;
+    }
+
+    .contact-list a:hover {
+        opacity: 0.9;
+        color: var(--main-color);
+    }
+
+    svg {
+        width: 100%;
+        height: 100%;
+    }
+}

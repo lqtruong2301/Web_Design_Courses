@@ -105,3 +105,30 @@
     width: 110px;
     height: 110px;
 }
+
+
+@media screen and (max-width: 1024px) {
+    .about .quote {
+        font-size: 2.4rem;
+    }
+
+    .user-avatar-1, .user-avatar-2, .user-avatar-3, .user-avatar-5, .user-avatar-6 {
+        display: none;
+    }
+
+    .user-avatar-4 {
+        position: relative;
+        top: 80px;
+        left: 0;
+    }
+    .group-arrow-btn .arrow-left-btn,
+    .group-arrow-btn .arrow-right-btn {
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    padding: 10px;
+    border-radius: 50%;
+    background: var(--main-color);
+}
+}
