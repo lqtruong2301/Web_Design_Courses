@@ -42,3 +42,20 @@
     text-decoration: underline !important;
 
 }
+
+@media screen and (max-width: 1024px) {
+    .course-top .sub-title {
+        font-size: 3.2rem;
+        line-height: 1.4;
+    }
+
+    .course-top{
+        padding: 0 20px;
+    }
+
+    .course-top .desc-course {
+        width: 460px;
+        font-size: 1.6rem;
+        margin: 0 ;
+    }
+}

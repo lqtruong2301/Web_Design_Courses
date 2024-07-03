@@ -2,8 +2,6 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* padding-bottom: 2%; */
-    /* border-bottom: 1px solid #e8ebed; */
     width: 1170px;
     max-width: calc(100% - 48px);
     margin-left: auto;
@@ -39,4 +37,33 @@
 .user-btn .btn.sign-up-btn {
     color: white;
     background-color: var(--main-color);
+}
+
+:where(.css-dev-only-do-not-override-zg0ahe).ant-drawer .ant-drawer-title {
+    font-size: 2rem;
+    margin-right: 42px;
+}
+
+@media screen and (max-width: 1024px) {
+    :where(
+            .css-dev-only-do-not-override-zg0ahe
+        ).ant-menu-light.ant-menu-root.ant-menu-vertical {
+        border-inline-end: none;
+    }
+    .user-btn {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .btn {
+        height: 50px;
+    }
+    .sign-in-btn-mb {
+        background-color: var(--main-color);
+        color: #fff;
+    }
+    .sign-up-btn-mb {
+        border: 1px solid var(--main-color);
+    }
 }

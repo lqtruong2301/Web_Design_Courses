@@ -169,3 +169,37 @@
 .students-active-state .students-active-user {
     margin-top: 8px;
 }
+
+@media screen and (max-width: 1024px){
+    .hero-content {
+        margin-top: 0;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .hero-content .title {
+        align-self: center;
+        text-align: center;
+    }
+
+    .hero-content .desc-hero {
+        align-self: center;
+        text-align: center;
+        width: 445px;
+        
+    }
+
+    .hero-content .play-btn-box {
+        justify-content: center;
+    }
+
+    .hero-img-box .students-active-state {
+        left: 10px;
+    }
+
+    .hero .hero-img-box {
+        position: relative;
+        display: flex;
+        justify-content: center;
+    } 
+}

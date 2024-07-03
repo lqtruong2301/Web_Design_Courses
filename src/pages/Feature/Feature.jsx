@@ -4,6 +4,8 @@ import { Row, Col } from "antd";
 import live_class from "../../assets/feature_icon/live_class.svg";
 import discuss from "../../assets/feature_icon/discuss.svg";
 import task from "../../assets/feature_icon/task.svg";
+import useViewport from "../../hooks/useViewport.jsx";
+
 
 const items = [
   {
@@ -27,6 +29,8 @@ const items = [
 ];
 
 const MyComponent = () => {
+  const viewPort = useViewport();
+  const isMobile = viewPort.width <= 1024;
   return (
     <div className="feature">
       <div className="feature-top">
@@ -35,14 +39,14 @@ const MyComponent = () => {
         <p className="desc-feature">
           Read our awesome features that absolutely suit you. Explore the features and know the best.
         </p>
-
+        
         <Row gutter={[16, 16]} style={{marginTop: "80px"}}>
           {items.map((item) => (
             <Col span={8} key={item.key}>
               <div className="feature-item">
                 <img src={item.icon} alt={item.title} className="feature-icon" />
                 <h3 className="feature-title">{item.title}</h3>
-                <p className="feature-content">{item.content}</p>
+                {!isMobile ? (<p className="feature-content">{item.content}</p>):(<></>)}
               </div>
             </Col>
           ))}
