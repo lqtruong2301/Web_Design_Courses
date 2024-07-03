@@ -41,11 +41,10 @@ const users = [
     },
 ];
 
-
-const About = () => {
-    const userWithQuote = users.find((user) => user.quote);
+const About = ({ scrollToTop }) => {
     const viewPort = useViewport();
     const isMobile = viewPort.width <= 1024;
+    const userWithQuote = users.find((user) => user.quote);
     return (
         <div className="about">
             <Row>
@@ -144,7 +143,7 @@ const About = () => {
                         </div>
                     </Col>
                 )}
-                
+
                 {!isMobile ? (
                     <Col span={14}>
                         <Row>
